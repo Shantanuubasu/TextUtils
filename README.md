@@ -1,3 +1,3 @@
 # TextUtils
 
-A Text Utility Web App using Django Framework, in this website you can enter any text and perform functions like remove punctuations, capitialize text, remove new line, remove extra spaces, and count characters.
+A Text Utility Web App using Django Framework, this platform enables users to input text and execute various functions, including punctuation removal, text capitalization, newline elimination, extra space removal, and character count computation.
