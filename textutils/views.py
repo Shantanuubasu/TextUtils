@@ -28,7 +28,7 @@ def analyze(request):
         params = {'purpose': 'Removed Punctuations', 'analyzed_text': analyzed}
         # analyze the text
         djtext=analyzed
-        #return render(request, 'analyze.html', params)
+        return render(request, 'analyze.html', params)
 
     if fullcaps == 'on':
         analyzed = ""
@@ -36,7 +36,7 @@ def analyze(request):
             analyzed += char.upper()
         params = {'purpose': 'Capitialized Text', 'analyzed_text': analyzed}
         djtext=analyzed
-    #    return render(request, 'analyze.html', params)
+        return render(request, 'analyze.html', params)
 
     if newline == 'on':
         analyzed = ""
@@ -45,7 +45,7 @@ def analyze(request):
                 analyzed += char
         params = {'purpose': 'Remove New Line', 'analyzed_text': analyzed}
         djtext=analyzed
-        #return render(request, 'analyze.html', params)
+        return render(request, 'analyze.html', params)
 
     if removespace == 'on':
         analyzed = ""
